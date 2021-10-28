@@ -1,0 +1,173 @@
+﻿
+@{
+    ViewBag.Title = "Formulario";
+}
+
+<body>
+
+    <div class="Contenedor">
+        <form action="Resultado" method="post" enctype="multipart/form-data" class="Panel" id="frm-contacto">
+            <div class="img">
+                <img src="~/Images/Logo-itla.png" width="300px" height="125px" alt="Imagen de prueba" />
+            </div>
+            <div class="Encabezado">
+                <h1 class="Titulo">F<span>ormulario</span></h1>
+            </div>
+            <!--ID-->
+            <label for="matricula" class="etiqueta"> Matricula:</label>
+            <input type="text" id="matricula" name="matricula" class="input" placeholder="Escriba la matricula deseada..."
+                   required>
+            <!--Nombres-->
+            <label for="nombre" class="etiqueta">Nombres:</label>
+            <input type="text" id="nombre" name="nombre" class="input" placeholder="Escriba el nombre deseado..."
+                   required>
+            <!--Apellidos-->
+            <label for="apellido" class="etiqueta"> Apellidos:</label>
+            <input type="text" id="apellido" name="apellido" class="input" placeholder="Escriba el apellido deseado..."
+                   required>
+            <!--Fecha de nacimiento-->
+            <label for="fechaNac" class="etiqueta"> Fecha de nacimiento: </label>
+            <input type="text" id="fechaNac" name="fecha" class="input" placeholder="Escriba su fecha..."
+                   required>
+
+            <!--Carrera-->
+            <label for="carrera" class="etiqueta"> Carrera:</label>
+            <input type="text" id="carrera" name="carrera" class="input" placeholder="Escriba su carrera deseado..."
+                   required>
+
+            <!--Direccion-->
+            <label for="GPS" class="etiqueta"> Direccion:</label>
+            <input type="text" id="GPS" name="direccion" class="input" placeholder="Escriba su direccion deseado..."
+                   required>
+
+            <!--Telefono-->
+            <label for="telefono" class="etiqueta"> Telefono: </label>
+            <input type="text" id="telefono" name="telefono" class="input" placeholder="Escriba su telefono celular..."
+                   required>
+            <!--E-mail-->
+            <label for="correo" class="etiqueta"> E-mail: </label>
+            <input type="email" id="correo" name="correo" class="input" placeholder="Escriba su E-mail..."
+                   required>
+            <!--Guardar datos-->
+            <label for="guardar" class="etiqueta"> Persistir datos en: </label>
+            <input type="submit" class="botonE" id="guardar" value=" EXCELL">
+            <input type="submit" class="botonT" id="guardar" value=" TXT">
+            <input type="submit" class="botonJ" id="guardar" value=" JSON">
+        </form>
+
+
+    </div>
+</body>
+
+
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    
+
+    body {
+        background: url(../../Images/original.jpg);
+        background-size: 100%;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .Contenedor .Panel .Encabezado .Titulo {
+        font-weight: normal;
+        font-family: 'Courier New', Courier, monospace;
+        color: blue;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+    }
+    .img{
+        text-align: center;
+    }
+
+    .Titulo span {
+        color: rgb(255, 250, 250);
+    }
+
+    .Panel {
+        background-color: rgb(5, 5, 5);
+        filter: alpha(opacity=70);
+        opacity: .70;
+        opacity: .70;
+        width: 90%;
+        border-radius: 10px;
+        max-width: 400px;
+        margin: auto;
+        padding: 40px 35px;
+        margin-top: 30px;
+        padding-bottom: 30px;
+        border-radius: 3px;
+    }
+
+    .etiqueta {
+        display: block;
+        color: blue;
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        position: relative;
+    }
+
+    .input {
+        background-color: rgb(171, 202, 171);
+        border: none;
+        outline: none;
+        border-bottom: 2px solid blue;
+        width: 100%;
+        padding: 12px;
+        text-align: left;
+        margin-bottom: 20px;
+        border-radius: 2px;
+        font-size: 14px;
+        color: darkblue;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .botonE {
+        left: 5px;
+        
+    }
+    .botonT{
+        left: 55px;
+    }
+
+    .botonJ{
+        left: 70px;
+    }
+    #guardar {
+        
+        height: 30px;
+        width: 100px;
+        font-family: 'Courier New', Courier, monospace;
+       
+        background-color: blue;
+        font-size: 16px;
+     
+        border-radius: 5px;
+        color: white;
+      
+       
+    }
+
+        #guardar:hover {
+            background-color:gold;
+        }
+
+        #guardar:active {
+            background-color:chartreuse;
+        }
+
+
+</style>
+

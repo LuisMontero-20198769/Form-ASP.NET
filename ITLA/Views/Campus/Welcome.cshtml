@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewBag.Title = "Welcome";
+}
+
+
+
+<body>
+    <div class="Contenedor">
+            <div class="Encabezado">
+                <h1 class="Titulo">W<span>elcome to Campus ITLA</span></h1>
+            </div>
+             <div class="img">
+                 <img src="~/Images/logo-fondo-blanco-preview-1.jpg" width="600px" height="400px" alt="Imagen de prueba"/>
+             </div>
+            <!--Entrar al form-->
+             <div class="hola" align="center">
+                 <a href="Formulario" class="btn btn-primary">Entrar</a>
+             </div>
+    </div>
+</body>
+
+     
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    h1{
+        color: white;
+        font-family:Consolas;
+        background-color:darkgray;
+        border-radius: 10px;
+    }
+    .hola{
+        margin: auto;
+        padding: 10px;
+    }
+    
+
+    .Encabezado{
+        text-align: center;
+    }
+    body {
+        background: url(../../Images/original.jpg);
+        background-size: 100%;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .Contenedor .Panel .Encabezado .Titulo {
+        font-weight: normal;
+        color:brown;
+      
+        text-align:center;
+        padding: 20px 0;
+        font-size: 30px;
+    }
+
+    .Titulo span {
+        color:blue;
+    }
+
+    .img{
+        text-align: center;
+       
+    }
+    img{
+        border-radius: 10px;
+    }
+  
+    .btn{
+        font-family:Consolas;
+        
+    }
+   
+
+        .btn-primary:hover {
+            background-color: rgb(223, 173, 80);
+        }
+
+        .btn-primary:active {
+            background-color: rgb(109, 109, 211);
+        }
+
+
+
+
+    
+</style>
